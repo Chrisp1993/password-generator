@@ -12,6 +12,7 @@ function generatePassword() {
     var length = prompt("Enter Number of characters between 8-128.");
     console.log (length);
     var finalPassword = ""
+}
 
     if (length < 8 || length > 128) {
       alert("Choose a number between 8 and 128");
@@ -22,3 +23,12 @@ function generatePassword() {
       alert("Choose a number between 8 and 128 then click the generate password button.");
       return (" ")
     }
+
+    //Variables to confirm characters//
+    var isLowercase = confirm("Do you want to use lower case letters? Click 'OK' for Yes and 'Cancel' for No.");
+    var isUppercase = confirm("Do you want to use upper case letters? Click 'OK' for Yes and 'Cancel' for No.");
+    var isANumber = confirm("Do you want to use a number? Click 'OK' for Yes and 'Cancel for No.");
+    var isSpecialChar = confirm("Do you want to use a special character? Click 'OK' for Yes and 'Cancel' for No.");
+
+    //Empty array for all usableChars concatinated//
+    var usableChars = []
