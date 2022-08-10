@@ -2,57 +2,52 @@
 *::before,
 *::after {
   box-sizing: border-box;
+  font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
 }
 
-html,
-body,
-.wrapper {
-  height: 100%;
-  margin: 0;
-  padding: 0;
-}
 
-body {
-  font-family: sans-serif;
-  background-color: #f9fbfd;
-}
-
-.wrapper {
-  padding-top: 30px;
-  padding-left: 20px;
-  padding-right: 20px;
-}
 
 header {
   text-align: center;
   padding: 20px;
   padding-top: 0px;
-  color: hsl(206, 17%, 28%);
+  color: hsl(0, 0%, 73%);
 }
 
+body {
+  background-color: #1d1d1d;
+}
+
+.wrap {
+  padding-top: 30px;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+
 .card {
-  background-color: hsl(0, 0%, 100%);
-  border-radius: 5px;
-  border-width: 1px;
-  box-shadow: rgba(0, 0, 0, 0.15) 0px 2px 8px 0px;
+  max-width: 750px;
+  box-shadow: rgba(188, 218, 248, 0.212) 0px 2px 8px 8px;
   color: hsl(206, 17%, 28%);
-  font-size: 18px;
+  background-color: hsl(0, 0%, 51%);
+  border-width: 1px;
+  border-radius: 5px;
+  font-size: 20px;
   margin: 0 auto;
-  max-width: 800px;
   padding: 30px 40px;
+}
+.card-content {
+  min-height: 100px;
 }
 
 .card-header::after {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #b3b6b9;
   height: 2px;
 }
 
-.card-body {
-  min-height: 100px;
-}
 
 .card-footer {
   text-align: center;
@@ -62,7 +57,7 @@ header {
   content: " ";
   display: block;
   width: 100%;
-  background: #e7e9eb;
+  background: #b3b6b9;
   height: 2px;
 }
 
@@ -73,18 +68,18 @@ header {
 }
 
 .btn {
+    display: inline-block;
+    text-align: center;
     border: none;
-    background-color: hsl(360, 91%, 36%);
-    border-radius: 25px;
+    cursor: pointer;
+    background-color: #103764;
     box-shadow: rgba(0, 0, 0, 0.1) 0px 1px 6px 0px rgba(0, 0, 0, 0.2) 0px 1px 1px 0px;
     color: hsl(0, 0%, 100%);
-    display: inline-block;
-    font-size: 22px;
-    line-height: 22px;
-    margin: 16px 16px 16px 20px;
+    border-radius: 30px;
+    line-height: 20px;
+    font-size: 24px;
     padding: 14px 34px;
-    text-align: center;
-    cursor: pointer;
+    margin: 16px 16px 16px 20px;
   }
   
   button[disabled] {
